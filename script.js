@@ -60,7 +60,7 @@ document.getElementById("searchInput")?.addEventListener("keyup", function () {
     let tbody = document.getElementById("studentTbody");
     tbody.innerHTML = "";
 
-    mahasiswa
+    data
         .filter(
             (mhs) =>
                 mhs.nim.toLowerCase().includes(value) ||
@@ -92,7 +92,7 @@ document.getElementById("studentForm")?.addEventListener("submit", function (e) 
     data.push({ nim, nama, gender });
     saveMahasiswa(data);
 
-    alert("Mahasiswa berhasil ditambahkan!");
+    alert("Mahasiswa berhasil ditambhkan!");
     this.reset();
 });
 

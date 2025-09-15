@@ -9,34 +9,37 @@
 <!-- <script src="script.js"></script> -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-success">
+<body class="bg-success">
+<nav class="navbar navbar-expand-lg bg-success border-bottom border-top border-1 border-second shadow">
 <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center text-white" href="#">
-        <img src="upnyk.png" alt="logoUpn" width="80" height="70">
-    <img src="logo.jpg" alt="Logo" width="120" height="50" class="d-inline-block align-text-top me-2">SPEDA </a>
+    <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="#">
+    <img src="upnyk.png" alt="logoUpn" width="120" height="120" class="me-3"> 
+    <img src="logo.jpg" alt="Logo" width="120" height="60" class="d-inline-block align-text-top me-3">SPEDA </a>
     <div class="navbar-nav me-auto flex-row">
-    <a class="nav-link active mx-3 text-white" aria-current="page" href="index.html">Home</a>
-    <a class="nav-link mx-3 text-white" href="tambah.html">Tambah Mahasiswa</a>
+    <a class="nav-link active mx-3 text-white fw-semibold" aria-current="page" href="index.html">HOME</a>
+    <a class="nav-link mx-3 text-white fw-semibold" href="tambah.html">TAMBAH MAHASISWA</a>
     </div>
 </div>
 </nav>
 <div class="container mt-4">
-    <h3 class="text-center mb-3">Daftar Mahasiswa</h3>
+    <h3 class="text-center text-white fw-bold mb-3">DAFTAR MAHASISWA</h3>
     <form id="studentForm">
         <div class="mb-3">
-            <label for="NIM" class="form-label">NIM</label>
+            <label for="NIM" class="form-label text-white fw-bold">NIM</label>
             <input type="text" class="form-control" id="nim" required> 
         </div>
         <div class="mb-3">
-            <label for="Nama" class="form-label">Nama</label>
+            <label for="Nama" class="form-label text-white fw-bold">Nama</label>
             <input type="text" class="form-control" id="nama" required>   
         </div>
         <div class="mb-3">
-            <label class="form-label">Jenis Kelamin</label><br>
-            <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
-            <input type="radio" name="gender" value="Perempuan" required class="ms-3"> Perempuan
+            <label class="form-label text-white fw-bold">Jenis Kelamin</label><br>
+            <input type="radio" name="gender" value="Laki-Laki" required>
+            <span class="text-white">Laki-Laki</span>
+            <input type="radio" name="gender" value="Perempuan" required class="ms-3">
+            <span class="text-white">Perempuan</span>
         </div>
-        <button type="submit" class="btn btn-success"> Simpan </button>
+        <button type="submit" class="btn btn-info text-black"> Simpan </button>
     </form>
 </div>
     

@@ -27,9 +27,9 @@ function renderTabel() {
         tbody.innerHTML += `
         <tr>
             <td class="bg-light text-black">${index + 1}</td>
-            <td class="bg-light text-black">${mhs.nim}</td>
+            <td class="bg-light text-white">${mhs.nim}</td>
             <td class="bg-light text-black">${mhs.nama}</td>
-            <td class="bg-light text-black">${mhs.gender}</td>
+            <td class="bg-light text-white">${mhs.gender}</td>
             <td class="bg-light">
                 <button class="btn btn-sm btn-primary">Update</button>
                 <button class="btn btn-sm btn-danger" onclick="deleteStudent(${index})" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
@@ -46,10 +46,6 @@ function deleteStudent(index) {
 }
 
 document.getElementById("confirmDelete")?.addEventListener("click", () => {
-    let mahasiswa = getMahasiswa();
-    mahasiswa.splice(deleteIndex, 1);
-    saveMahasiswa(mahasiswa);
-    renderTabel();
     let modal = bootstrap.Modal.getInstance(document.getElementById("deleteModal"));
     modal.hide();
 });
